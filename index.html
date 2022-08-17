@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Formulario Web</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <h1>Formulario de stefi</h1> <!-- PARA ENCABEZADOS -->
+    <div class="container">
+        <form>
+            <!--Etiqueta fieldset-->
+            <fieldset class="fieldset-bg">
+                <!--Etiqueta legend-->
+                <legend>Datos personales</legend>
+                <!--Etiqueta label-->
+                <label class="form-label" id="label_name">Nombre y apellidos: </label>
+                <!--Etiqueta input tipo texto-->
+                <input id="user_name" name='nombre' type='text' placeholder="ej ESTEFANIA" /><br>
+                <label>Sexo: </label>
+                <!--Etiqueta select-->
+                <select name="select">
+                    <!--Etiqueta option-->
+                    <option value="value1">Hombre</option>
+                    <option value="value2" selected>Mujer</option>
+                    <option value="value2">Diego</option>
+
+                </select><br><br>
+                <label>Edad: </label>
+                <!--Etiqueta input tipo checkbox-->
+                <input type='checkbox' name='edad' value='20-39' /> 20-39
+                <input type='checkbox' name='edad' value='40-59' /> 40-59
+                <input type='checkbox' name='edad' value='60-79' /> 60-79<br><br>
+                <label>Email: </label>
+                <!--Etiqueta input tipo email-->
+                <input name='nombre' type='email' /><br><br>
+                <label>Estudios: </label>
+                <!--Etiqueta select-->
+                <select id="dino-select">
+                    <!--Etiqueta optgroup-->
+                    <optgroup label="Estudios Universitarios">
+                        <!--Etiqueta option-->
+                        <option>Doctorado</option>
+                        <option>Máster</option>
+                        <option>Grado</option>
+                    </optgroup>
+                    <optgroup label="Ciclo Formativo">
+                        <option>Grado Superior</option>
+                        <option>Grado Medio</option>
+                    </optgroup>
+                </select><br><br>
+                <label>Elige tu navegador favorito: </label>
+                <input list="browsers" name="myBrowser" />
+                <!--Etiqueta datalist-->
+                <datalist id="browsers">
+                    <option value="Chrome">
+                    <option value="Firefox">
+                    <option value="Internet Explorer">
+                    <option value="Opera">
+                    <option value="Safari">
+                    <option value="Microsoft Edge">
+                </datalist><br><br>
+                <!--Etiqueta textarea-->
+                <textarea name="textarea" rows="10" cols="50" placeholder="Escriba su mensaje..."></textarea>
+            </fieldset>
+            <input type="submit" value="Enviar" />
+        </form><br><br>
+    </div>
+
+    <button id="alerta" class="btn-cus">clickme</button>
+    <button id="alerta" class="btn btn-primary">clickme</button>
+    <a href="https://www.google.cl" target="_blank">Voy a google</a>
+
+    <script src="main.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

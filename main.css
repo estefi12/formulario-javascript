@@ -1,0 +1,20 @@
+.form-label{
+    color: #00000098
+}
+
+
+body{
+    background-color: blueviolet;
+   
+}
+
+.fieldset-bg{
+    background-image:url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg");
+     
+}
+
+.btn-cus {
+    border: red 1px solid;
+   width: 800px;
+    background-image: url("https://empresas.blogthinkbig.com/wp-content/uploads/2019/11/Imagen3-245003649.jpg?w=800");
+}
